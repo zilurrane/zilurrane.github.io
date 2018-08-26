@@ -1,0 +1,48 @@
+{
+  "name": "zilurrane.github.io",
+  "version": "0.0.1",
+  "description": "Something about Ziluli",
+  "main": "",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "lint": "standard",
+    "code-format": "standard --fix",
+    "precommit": "npm run lint && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zilurrane/zilurrane.github.io.git"
+  },
+  "keywords": [
+    "Ziluli",
+    "Portfolio"
+  ],
+  "author": "Zilu Rane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zilurrane/zilurrane.github.io/issues"
+  },
+  "homepage": "https://zilurrane.github.io",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "gh-pages": "^1.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^0.14.3",
+    "standard": "^11.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^2.1.5",
+    "webpack-dev-server": "^3.1.6"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
