@@ -6,11 +6,30 @@ import Paper from '@material-ui/core/Paper'
 
 const styles = theme => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    color: '#FFF',
+    backgroundColor: '#008080'
+  },
+  userName: {
+    textAlign: 'center'
+  },
+  userImage: {
+    textAlign: 'center',
+    marginTop: -40,
+    height: 120,
+    borderRadius: 120,
+    boxShadow: '0px 0px 0px 4px #FFF'
   },
   paper: {
     padding: theme.spacing.unit * 2,
-    textAlign: 'center'
+    textAlign: 'center',
+    borderTopLeftRadius: 50,
+    borderTopRightRadius: 50,
+    textShadow: '0 2px 20px rgba(0,0,0,.16)',
+    color: '#333',
+    fontWeight: 'bolder',
+    minHeight: 300,
+    backgroundColor: '#EEE'
   }
 })
 
@@ -22,9 +41,18 @@ class GuttersGrid extends React.Component {
       <Grid container className={classes.root} spacing={16}>
         <Grid item xs={12}>
           <Grid container justify='center' spacing={16}>
-            <h1>Zilu Ramkrishna Rane</h1>
-            <Grid item xs={12} sm={10}>
-              <Paper className={classes.paper}>Software Engineer</Paper>
+            <Grid item xs={12}>
+              <h1 className={classes.userName}>
+                Zilu Ramkrishna Rane
+              </h1>
+            </Grid>
+            <Grid item xs={12} sm={11}>
+              <Paper className={classes.paper}>
+                <img className={classes.userImage} src='https://avatars3.githubusercontent.com/u/9009188?s=200&v=4' />
+                <h3>
+                  Software Engineer
+                </h3>
+              </Paper>
             </Grid>
           </Grid>
         </Grid>
