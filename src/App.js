@@ -27,9 +27,27 @@ const styles = theme => ({
     borderTopRightRadius: 50,
     textShadow: '0 2px 20px rgba(0,0,0,.16)',
     color: '#333',
-    fontWeight: 'bolder',
+    fontWeight: 300,
     minHeight: 300,
     backgroundColor: '#EEE'
+  },
+  professionBlock: {
+    margin: '20px 0px'
+  },
+  professionTitle: {
+    fontWeight: 700,
+    fontSize: 24,
+    margin: 0,
+    padding: 0
+  },
+  professionLocation: {
+    fontWeight: 300,
+    fontSize: 16,
+    margin: 0,
+    padding: 0
+  },
+  studiedFrom: {
+    fontSize: 14
   }
 })
 
@@ -49,9 +67,17 @@ class GuttersGrid extends React.Component {
             <Grid item xs={12} sm={11}>
               <Paper className={classes.paper}>
                 <img className={classes.userImage} src='https://avatars3.githubusercontent.com/u/9009188?s=200&v=4' />
-                <h3>
-                  Software Engineer
-                </h3>
+                <div className={classes.professionBlock}>
+                  <div className={classes.professionTitle}>
+                    Software Engineer
+                  </div>
+                  <div className={classes.professionLocation}>
+                    Pune, India(MH)
+                  </div>
+                </div>
+                <div className={classes.studiedFrom}>
+                  B.E. Computer Engineering, Mumbai University
+                </div>
               </Paper>
             </Grid>
           </Grid>
