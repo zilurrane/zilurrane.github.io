@@ -8,7 +8,7 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
     color: '#FFF',
-    backgroundColor: '#008080'
+    background: 'linear-gradient(150deg,#281483 15%,#8f6ed5 70%,#d782d9 94%)'
   },
   userName: {
     textAlign: 'center'
