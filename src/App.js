@@ -26,6 +26,7 @@ const styles = theme => ({
     borderTopLeftRadius: 50,
     borderTopRightRadius: 50,
     textShadow: '0 2px 20px rgba(0,0,0,.16)',
+    boxShadow: '0 15px 35px rgba(11, 11, 12, 0.14),0 5px 15px rgba(0, 0, 0, 0.63) !important',
     color: '#333',
     fontWeight: 300,
     minHeight: 300,
