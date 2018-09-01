@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
+import SocialLinks from './components/social-links'
 
 const styles = theme => ({
   root: {
@@ -11,7 +12,11 @@ const styles = theme => ({
     background: 'linear-gradient(150deg,#281483 15%,#8f6ed5 70%,#d782d9 94%)'
   },
   userName: {
-    textAlign: 'center'
+    textAlign: 'center',
+    fontSize: 38,
+    marginTop: 80,
+    marginBottom: 40,
+    lineHeight: 'normal'
   },
   userImage: {
     textAlign: 'center',
@@ -52,7 +57,7 @@ const styles = theme => ({
   }
 })
 
-class GuttersGrid extends React.Component {
+class App extends React.Component {
   render () {
     const { classes } = this.props
 
@@ -79,6 +84,7 @@ class GuttersGrid extends React.Component {
                 <div className={classes.studiedFrom}>
                   B.E. Computer Engineering, Mumbai University
                 </div>
+                <SocialLinks />
               </Paper>
             </Grid>
           </Grid>
@@ -88,8 +94,8 @@ class GuttersGrid extends React.Component {
   }
 }
 
-GuttersGrid.propTypes = {
+App.propTypes = {
   classes: PropTypes.object.isRequired
 }
 
-export default withStyles(styles)(GuttersGrid)
+export default withStyles(styles)(App)
