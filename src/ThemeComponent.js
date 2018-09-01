@@ -1,6 +1,5 @@
 import React from 'react'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import Typography from '@material-ui/core/Typography'
 import App from './App'
 
 const theme = createMuiTheme({
@@ -12,9 +11,7 @@ const theme = createMuiTheme({
 function TypographyTheme () {
   return (
     <MuiThemeProvider theme={theme}>
-      <Typography>
-        <App />
-      </Typography>
+      <App />
     </MuiThemeProvider>
   )
 }

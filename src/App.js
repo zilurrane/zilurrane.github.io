@@ -4,12 +4,16 @@ import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
 import SocialLinks from './components/social-links'
+import ProfessionIntro from './components/profession-intro'
+import TechnicalStack from './components/technical-stack'
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
     color: '#FFF',
-    background: 'linear-gradient(150deg,#281483 15%,#8f6ed5 70%,#d782d9 94%)'
+    background: 'linear-gradient(150deg,#281483 15%,#8f6ed5 70%,#d782d9 94%)',
+    minHeight: '100vh',
+    fontFamily: 'Play'
   },
   userName: {
     textAlign: 'center',
@@ -34,7 +38,6 @@ const styles = theme => ({
     boxShadow: '0 15px 35px rgba(11, 11, 12, 0.14),0 5px 15px rgba(0, 0, 0, 0.63) !important',
     color: '#333',
     fontWeight: 300,
-    minHeight: 300,
     backgroundColor: '#EEE'
   },
   professionBlock: {
@@ -73,18 +76,9 @@ class App extends React.Component {
             <Grid item xs={12} sm={11}>
               <Paper className={classes.paper}>
                 <img className={classes.userImage} src='https://avatars3.githubusercontent.com/u/9009188?s=200&v=4' />
-                <div className={classes.professionBlock}>
-                  <div className={classes.professionTitle}>
-                    Software Engineer
-                  </div>
-                  <div className={classes.professionLocation}>
-                    Pune, India(MH)
-                  </div>
-                </div>
-                <div className={classes.studiedFrom}>
-                  B.E. Computer Engineering, Mumbai University
-                </div>
+                <ProfessionIntro />
                 <SocialLinks />
+                <TechnicalStack />
               </Paper>
             </Grid>
           </Grid>
