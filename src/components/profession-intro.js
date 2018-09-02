@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles'
 
 const styles = () => ({
   professionBlock: {
-    margin: '20px 0px'
+    margin: '10px 0px'
   },
   professionTitle: {
     fontWeight: 700,

@@ -6,6 +6,8 @@ import Paper from '@material-ui/core/Paper'
 import SocialLinks from './components/social-links'
 import ProfessionIntro from './components/profession-intro'
 import TechnicalStack from './components/technical-stack'
+import ExecutiveSummary from './components/executive-summary'
+import Experience from './components/experience'
 
 const styles = theme => ({
   root: {
@@ -75,10 +77,26 @@ class App extends React.Component {
             </Grid>
             <Grid item xs={12} sm={11}>
               <Paper className={classes.paper}>
-                <img className={classes.userImage} src='https://avatars3.githubusercontent.com/u/9009188?s=200&v=4' />
-                <ProfessionIntro />
-                <SocialLinks />
-                <TechnicalStack />
+                <Grid container justify='center' spacing={16}>
+                  <Grid item xs={12}>
+                    <img className={classes.userImage} src='https://avatars3.githubusercontent.com/u/9009188?s=200&v=4' />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <ProfessionIntro />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <SocialLinks />
+                  </Grid>
+                  <Grid item xs={12} sm={10}>
+                    <ExecutiveSummary />
+                  </Grid>
+                  <Grid item xs={12} sm={10}>
+                    <TechnicalStack />
+                  </Grid>
+                  <Grid item xs={12} sm={10}>
+                    <Experience />
+                  </Grid>
+                </Grid>
               </Paper>
             </Grid>
           </Grid>

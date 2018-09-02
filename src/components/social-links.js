@@ -6,7 +6,7 @@ import classNames from 'classnames'
 
 const styles = theme => ({
   socialLinks: {
-    margin: '10px 0px'
+    margin: '0px'
   },
   button: {
     margin: theme.spacing.unit,

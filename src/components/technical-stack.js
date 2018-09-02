@@ -19,9 +19,9 @@ function TechnicalStack (props) {
   const { classes } = props
 
   return (
-    <Card xs={12} sm={8} className={classes.card}>
+    <Card className={classes.card}>
       <CardContent>
-        <Typography variant='headline' component='h2'>
+        <Typography variant='headline' component='h1'>
           Technical Stack
         </Typography>
         <Typography component='div' className={classes.title}>

@@ -9,7 +9,10 @@ const styles = theme => ({
   chip: {
     margin: theme.spacing.unit / 2,
     boxShadow: '0px 0px 1px #333',
-    fontWeight: '500'
+    fontWeight: '500',
+    '&:hover': {
+      background: '#C51162'
+    }
   }
 })
 
